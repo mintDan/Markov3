@@ -365,14 +365,14 @@ if __name__ == "__main__":
     DG.add_node("C",color="lightblue",pos=(2,2.5))
     DG.add_node("G",color="lightblue",pos=(2,3.5))
     DG.add_node("T",color="lightblue",pos=(2,4.5))
-    DG.add_edge(1, "A",weight=round(e[0,0],2),label_pos=0.3)   # adds the nodes in order 2, 1
-    DG.add_edge(1, "C",weight=round(e[0,1],2),label_pos=0.3)
-    DG.add_edge(1, "G",weight=round(e[1,0],2),label_pos=0.3)   # adds the nodes in order 2, 1
-    DG.add_edge(1, "T",weight=round(e[1,1],2),label_pos=0.3)
-    DG.add_edge(2, "A",weight=round(e[0,0],2),label_pos=0.3)   # adds the nodes in order 2, 1
-    DG.add_edge(2, "C",weight=round(e[0,1],2),label_pos=0.3)
-    DG.add_edge(2, "G",weight=round(e[1,0],2),label_pos=0.3)   # adds the nodes in order 2, 1
-    DG.add_edge(2, "T",weight=round(e[1,1],2),label_pos=0.3)
+    DG.add_edge(1, "A",weight=round(e[0,0],2),label_pos=0.5)   # adds the nodes in order 2, 1
+    DG.add_edge(1, "C",weight=round(e[0,1],2),label_pos=0.5)
+    DG.add_edge(1, "G",weight=round(e[0,2],2),label_pos=0.5)   # adds the nodes in order 2, 1
+    DG.add_edge(1, "T",weight=round(e[0,3],2),label_pos=0.5)
+    DG.add_edge(2, "A",weight=round(e[1,0],2),label_pos=0.5)   # adds the nodes in order 2, 1
+    DG.add_edge(2, "C",weight=round(e[1,1],2),label_pos=0.5)
+    DG.add_edge(2, "G",weight=round(e[1,2],2),label_pos=0.5)   # adds the nodes in order 2, 1
+    DG.add_edge(2, "T",weight=round(e[1,3],2),label_pos=0.5)
 
 
     color_map = ["white","white","lightblue","lightblue","lightblue","lightblue"]
